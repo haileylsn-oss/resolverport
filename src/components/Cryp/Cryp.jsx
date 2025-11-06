@@ -87,7 +87,7 @@ const Cryp = () => {
       <img
         src={wt.img}
         alt={wt.title}
-        className="w-[55px] h-[55px] object-contain mb-3"
+        className="w-[55px] h-[55px] rounded-full object-contain mb-3"
       />
 
       <h3 className="text-[15px] font-semibold text-gray-900 text-center">

@@ -83,6 +83,23 @@ import wallet_82 from "./assets/wallet82.png";
 import wallet_83 from "./assets/wallet83.png";
 import wallet_84 from "./assets/wallet84.png";
 import wallet_85 from "./assets/wallet80.jpg";
+import wallet_86 from "./assets/wallet86.jpg";
+import wallet_87 from "./assets/wallet87.png";
+import wallet_88 from "./assets/xportal.jpg";
+import wallet_89 from "./assets/XUMM.jpg";
+import wallet_90 from "./assets/yorio.jpg";
+import wallet_91 from "./assets/solo.jpg";
+import wallet_92 from "./assets/sparrow.jpg";
+import wallet_93 from "./assets/specter.jpg";
+import wallet_94 from "./assets/stream.jpg";
+import wallet_95 from "./assets/terra.jpg";
+import wallet_96 from "./assets/nami.jpg";
+import wallet_97 from "./assets/box.jpg";
+import wallet_98 from "./assets/ellipal.png";
+import wallet_99 from "./assets/kelpr.jpg";
+import wallet_100 from "./assets/keystone.jpg";
+import wallet_101 from "./assets/Lace.jpg";
+import wallet_102 from "./assets/other.jpg";
 
 export const LOOP_DURATION = 6;
 
@@ -172,6 +189,23 @@ const wallets = [
   { id: 83, title: "BiFrost Wallet", img: wallet_83 },
   { id: 84, title: "Rakuten Wallet", img: wallet_84 },
   { id: 85, title: "ByBit Wallet", img: wallet_85 },
+  { id: 86, title: "Dione", img: wallet_86 },
+  { id: 87, title: "Samorai", img: wallet_87 },
+  { id: 88, title: "Xportal", img: wallet_88 },
+  { id: 89, title: "XUMM", img: wallet_89  },
+  { id: 90, title: "Yorio", img: wallet_90 },
+  { id: 91, title: "Solo", img: wallet_91 },
+  { id: 92, title: "Sparrow", img: wallet_92 },
+  { id: 93, title: "Specter Wallet", img: wallet_93 },
+  { id: 94, title: "Stream Wallet", img: wallet_94 },
+  { id: 95, title: "Terra", img: wallet_95 },
+  { id: 96, title: "Nami ", img: wallet_96 },
+  { id: 97, title: "Box Wallet", img: wallet_97 },
+  { id: 98, title: " Ellipal", img: wallet_98 },
+  { id: 99, title: "Kelpr", img: wallet_99 },
+  { id: 100, title: "Keystone", img: wallet_100 },
+  { id: 101, title: "Lace", img: wallet_101 },
+  { id: 102, title: "Others", img: wallet_102 },
 ];
 
 export default wallets;
