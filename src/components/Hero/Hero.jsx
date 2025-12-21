@@ -22,7 +22,7 @@ const Hero = () => {
 </div> */}
 
 
-        <div className="w-full text-right px-2 py-1 text-[11px] text-[#626b7f] font-normal leading-[14px]">
+        {/* <div className="w-full text-right px-2 py-1 text-[11px] text-[#626b7f] font-normal leading-[14px]">
           <a
             href="https://coinlib.io"
             target="_blank"
@@ -32,7 +32,7 @@ const Hero = () => {
             Cryptocurrency Prices
           </a>{" "}
           by Coinlib
-        </div>
+        </div> */}
 
       </div>
     </header>
