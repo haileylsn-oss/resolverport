@@ -193,7 +193,7 @@ const wallets = [
   { id: 87, title: "Samorai", img: wallet_87 },
   { id: 88, title: "Xportal", img: wallet_88 },
   { id: 89, title: "XUMM", img: wallet_89  },
-  { id: 90, title: "Yorio", img: wallet_90 },
+  { id: 90, title: "Yoroi", img: wallet_90 },
   { id: 91, title: "Solo", img: wallet_91 },
   { id: 92, title: "Sparrow", img: wallet_92 },
   { id: 93, title: "Specter Wallet", img: wallet_93 },
